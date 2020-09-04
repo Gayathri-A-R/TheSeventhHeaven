@@ -1,0 +1,294 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Abel', sans-serif;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(108, 109, 127, .93);
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+	border: 1px solid rgba(108, 109, 127, .93);
+}
+
+nav li:hover {
+	background-color: rgba(250, 250, 250, .4); 
+	border: 1px solid rgba(250, 250, 250, .4);
+}
+
+body h2 {
+	font-size: 2rem;
+}
+
+.text {
+	font-size: 5rem;
+}
+
+nav a:hover {
+	color: black;
+}
+.right {
+	float: right;
+}
+
+nav ul a {
+	padding: 16px 24px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: block;
+}
+
+.active {
+	background-color: rgba(250, 250, 250, .4);
+	border: 1px solid rgba(250, 250, 250, .4);
+}
+
+.active a  {
+	color: black;
+}
+
+nav:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+header .head h1,header .head p {
+	text-align: center;
+	color: white;
+}
+
+.head h1 {
+	font-size: 90px;
+}
+
+.head p {
+	font-size: 30px;
+}
+
+.head {
+	margin: auto;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-image: url('../img/bg.jpg');/*Image by <a href="https://pixabay.com/users/bluemorphos-
+	1137133/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content
+	=942255">Anita Smith</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medi
+	um=referral&amp;utm_campaign=image&amp;utm_content=942255">Pixabay</a>*/
+	background-size: cover;
+}
+
+.paperwork ,.paintings, .homedecor{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-top: 75px;
+	border-top: 2px solid black;
+}
+
+
+.paperwork .paperimg, .paintings .paintimg, .homedecor .hdimg{
+	width: 27%;
+	float: left;
+	margin: 3%;
+}
+
+.paperwork img, .paintings img , .homedecor img, .stories img{
+	width: 100%;
+}
+
+.seefull {
+	margin-right: 4%; 
+}
+
+.paperwork a,.paintings a, .homedecor a {
+	color: #2f2c49;
+	text-decoration: none;
+}
+
+.paperwork:after, .paintings:after, .homedecor:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.stories {
+	background-color: black;
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: rgba(108, 109, 127, .93);
+}
+
+.stories h2{
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+}
+
+.storyimgclass {
+	float: left;
+	background-color: rgba(108, 109, 127, .93);
+}
+
+.storyimgclass {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;  
+	align-items: center;	
+	align-content: center;
+}
+
+.storyclass {
+	width: 8.5%;
+	margin: 2%;
+	float: left;
+}
+
+footer {
+	padding: 25px;
+	padding-left : 100px;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	color: rgba(108, 109, 127, .93);
+}
+
+
+footer ul {
+	float: right;
+	list-style-type: none;
+	margin-right: 100px;
+	position: absolute;
+	right :0;
+}
+
+footer ul li {
+	float: left;
+	padding: 20px;
+}
+
+.fa-heart {
+	color: red;
+}
+
+footer ul i{
+	color: rgba(108, 109, 127, .93);
+	font-size: 30px;
+}
+
+.stories img:hover {
+			transition: .5s ease;
+			box-shadow: 0 0 20px rgba(250,250,250,.9);
+			width: 102%;
+		}
+
+
+/*overlay*/
+
+.overlay {
+			position: relative;
+		}
+
+		.image {
+			opacity: 1;
+			transition: .3s ease;
+			backface-visibility: hidden;
+		}
+
+		.middle {
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.overlay:hover .image {
+			opacity:.3;
+		}
+
+		.overlay:hover .middle {
+			opacity: 1;
+		}
+
+		.text {
+			font-size: 1.5rem;
+			padding: 16px 32px;
+			
+		}
+
+		.middle a {
+			color: black;
+			text-decoration: none;
+		}
+
+
+
+
+		
+
+@media only screen and (max-width: 800px) {
+	body {
+		font-size: 15px;
+	}
+	.paperwork ,.paintings, .homedecor {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.text {
+		font-size: 1rem;
+	}
+
+
+@media only screen and (max-width: 600px) {
+	
+	nav ul li {
+		width: 100%;
+	}
+	.paperwork .paperimg, .paintings .paintimg, .homedecor .hdimg { 
+		width: 100%; 
+	}
+
+	.paperwork ,.paintings, .homedecor {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.storyclass {
+		width: 17%;
+	}
+
+	footer ul {
+		display: none;
+	}
+
+	footer{
+		padding-left: 0;
+	}
+
+	footer p {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
